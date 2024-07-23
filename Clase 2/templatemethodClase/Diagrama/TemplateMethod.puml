@@ -1,0 +1,37 @@
+@startuml
+abstract class Empleado{
+-nombre: String
+-apellido:String
+-nroCuenta: String
+}
+Efectivo -u-|> Empleado
+Contratado -u-|> Empleado
+
+class Efectivo{
+-sueldoBase: double
+-premio: double
+-descuento: double
+}
+class Contratado{
+-cantHoras: int
+-montoPorHora: double
+}
+Empleado .r.> Liquidacion
+abstract class Liquidacion{
++liquidarSueldo(Empleado empleado)
++{abstract} calcularSueldo(Empleado empleado)
++{abstract} imprimir(Empleado empleado)
++depositarSueldo(Empleado empleado)
+}
+LiquidacionEfectivo -u-|> Liquidacion
+LiquidacionContratado -u-|> Liquidacion
+
+class LiquidacionEfectivo {
++calcularSueldo(Empleado empleado)
++imprimir(Empleado empleado)
+}
+class LiquidacionContratado {
++calcularSueldo(Empleado empleado)
++imprimir(Empleado empleado)
+}
+@enduml
