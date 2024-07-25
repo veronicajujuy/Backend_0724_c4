@@ -1,0 +1,30 @@
+@startuml
+class Producto{
+-nombre: String
+-Lote: int
+-Peso: int
+-Envasado: String
+}
+Producto ..> ManejadorProducto
+ManejadorLote -u-|> ManejadorProducto
+ManejadorPeso -u-|> ManejadorProducto
+ManejadorEnvase -u-|> ManejadorProducto
+ManejadorProducto --> ManejadorProducto
+class ManejadorProducto{
++{abstract} validarCalidad(Producto): String
+}
+class ManejadorLote{
++validarCalidad(Producto): String
+}
+class ManejadorPeso{
++validarCalidad(Producto): String
+}
+class ManejadorEnvase{
++validarCalidad(Producto): String
+}
+ManejadorProducto -l-> AnalistaDeCalidad
+class AnalistaDeCalidad{
++validarCalidad(Producto): String
+}
+
+@enduml
