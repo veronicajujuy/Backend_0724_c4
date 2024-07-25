@@ -1,0 +1,34 @@
+@startuml
+class Mail{
+-origen: String
+-destino: String
+-tema: String
+//getter/setter/const
+}
+Mail .l.> ManejadorMail
+ManejadorMail --> ManejadorMail
+abstract class ManejadorMail{
++{abstract} compruebaMail(Mail): String
+}
+ManejadorTecnico -u-|>ManejadorMail
+ManejadorComercial -u-|>ManejadorMail
+ManejadorGerencia -u-|>ManejadorMail
+ManejadorSpam -u-|>ManejadorMail
+
+class ManejadorGerencia{
++ compruebaMail(Mail): String
+}
+class ManejadorComercial{
++ compruebaMail(Mail): String
+}
+class ManejadorTecnico{
++ compruebaMail(Mail): String
+}
+class ManejadorSpam{
++ compruebaMail(Mail): String
+}
+ManejadorMail -l-> ProcesarMail
+class ProcesarMail{
++ compruebaMail(Mail): String
+}
+@enduml
