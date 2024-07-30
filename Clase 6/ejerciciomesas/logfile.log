@@ -1,0 +1,18 @@
+[2024-04-02 18:23:36] [ INFO ] [ApiVuelos:32] Disponible: 
+ vuelo: 
+ fecha salida: 2024-04-09
+ fecha regreso: 2024-04-12 Origen: Jujuy Destino: CABA
+[2024-04-02 18:23:36] [ INFO ] [ApiVuelos:32] Disponible: 
+ hotel: 
+ fecha entrada: 2024-04-09
+ fecha regreso: 2024-04-12 Ciudad: CABA
+[2024-04-02 18:23:36] [ INFO ] [FacadeBusqueda:14] Disponible: 
+ vuelo: 
+ fecha salida: 2024-04-09
+ fecha regreso: 2024-04-12 Origen: Jujuy Destino: CABADisponible: 
+ hotel: 
+ fecha entrada: 2024-04-09
+ fecha regreso: 2024-04-12 Ciudad: CABA
+[2024-04-02 18:23:36] [ INFO ] [ApiVuelos:32] No se encontro el vuelo 
+[2024-04-02 18:23:36] [ INFO ] [ApiVuelos:32] No se encontro el hotel 
+[2024-04-02 18:23:36] [ INFO ] [FacadeBusqueda:14] No se encontro el vuelo No se encontro el hotel 
