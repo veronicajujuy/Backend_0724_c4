@@ -1,0 +1,32 @@
+@startuml
+class Producto{
+-nombre: String
+-tipo: String
+}
+class Tarjeta{
+-numero: String
+-banco: String
+}
+Tarjeta ..> IFacadeDescuento
+Producto ..> IFacadeDescuento
+class ApiTarjeta{
++descuento(Tarjeta):int
+}
+class ApiProducto{
++descuento(Producto):int
+}
+class ApiCantidad{
++descuento(int):int
+}
+FacadeDescuento .u.|> IFacadeDescuento
+interface IFacadeDescuento{
++calcularDescuentos(Tarjeta, Producto, int): int
+}
+class FacadeDescuento{
++calcularDescuentos(Tarjeta, Producto, int): int
+}
+FacadeDescuento ..> ApiProducto
+FacadeDescuento ..> ApiTarjeta
+FacadeDescuento ..> ApiCantidad
+
+@enduml
