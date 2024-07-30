@@ -1,0 +1,14 @@
+@startuml
+class Computadora{
+-tipo: String
+-ram: int
+-discoRigido:int
+-contador: int
+//getter/setter/constructor
+}
+Computadora ..> ComputadoraFactory
+class ComputadoraFactory{
+-poolComputadoras: Map<String, Computadora>
++getComputadora(String): Computadora
+}
+@enduml
