@@ -1,0 +1,29 @@
+[2024-07-31 21:52:03] [ INFO ] [Main:7] [main] Este es mi primer logueo
+[2024-07-31 21:53:31] [ INFO ] [Main:7] [main] Este es mi primer logueo
+[2024-07-31 21:53:31] [ ERROR] [Main:8] [main] este es un error
+[2024-07-31 22:13:27] [ ERROR] [Main:12] [main] se produjo un error null
+[2024-07-31 22:14:22] [ ERROR] [Main:12] [main] se produjo un error La lista no tiene elementos
+[2024-07-31 22:17:52] [ ERROR] [Main:12] [main] se produjo un error La lista no tiene elementos
+[2024-07-31 22:17:52] [ INFO ] [ListaEnteros:13] [agregarNumeros] La lista tiene mas de 5 elementos
+[2024-07-31 22:17:52] [ INFO ] [ListaEnteros:29] [promedio] el promedio es : 13.5
+[2024-07-31 22:19:21] [ ERROR] [Main:12] [main] se produjo un error La lista no tiene elementos
+[2024-07-31 22:19:21] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es 5
+[2024-07-31 22:19:21] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es -10
+[2024-07-31 22:19:21] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es 22
+[2024-07-31 22:19:21] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es 45
+[2024-07-31 22:19:21] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es 12
+[2024-07-31 22:19:21] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es 7
+[2024-07-31 22:19:21] [ INFO ] [ListaEnteros:14] [agregarNumeros] La lista tiene mas de 5 elementos
+[2024-07-31 22:19:21] [ INFO ] [ListaEnteros:30] [promedio] el promedio es : 13.5
+[2024-07-31 22:19:53] [ ERROR] [Main:12] [main] se produjo un error La lista no tiene elementos
+[2024-07-31 22:19:53] [ INFO ] [ListaEnteros:14] [agregarNumeros] La lista tiene mas de 5 elementos
+[2024-07-31 22:19:53] [ INFO ] [ListaEnteros:30] [promedio] el promedio es : 13.5
+[2024-07-31 22:20:37] [ ERROR] [Main:12] [main] se produjo un error La lista no tiene elementos
+[2024-07-31 22:20:37] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es 5
+[2024-07-31 22:20:37] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es -10
+[2024-07-31 22:20:37] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es 22
+[2024-07-31 22:20:37] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es 45
+[2024-07-31 22:20:37] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es 12
+[2024-07-31 22:20:37] [ DEBUG] [ListaEnteros:12] [agregarNumeros] el numero que se agrego es 7
+[2024-07-31 22:20:37] [ INFO ] [ListaEnteros:14] [agregarNumeros] La lista tiene mas de 5 elementos
+[2024-07-31 22:20:37] [ INFO ] [ListaEnteros:30] [promedio] el promedio es : 13.5
