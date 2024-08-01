@@ -1,0 +1,101 @@
+2024-08-01 00:07:37.015045-03:00 database: wrong user or password; user: "ROOT"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-224]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Main.getConnection(Main.java:48)
+	at Main.main(Main.java:18)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+2024-08-01 00:14:18.595464-03:00 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db [2.2.224/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Main.getConnection(Main.java:48)
+	at Main.main(Main.java:18)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db [2.2.224/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 19 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 13 more
+2024-08-01 00:14:49.741533-03:00 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db [2.2.224/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Main.getConnection(Main.java:48)
+	at Main.main(Main.java:18)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db [2.2.224/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 19 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 13 more
+2024-08-01 00:19:58.889053-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ANIMALS" no encontrada
+Table "ANIMALS" not found; SQL statement:
+DELETE FROM ANIMALS WHERE ID = 5 [42102-224]
+2024-08-01 00:22:00.652635-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 [*]NOT NULL, TIPO VARCHAR(50) NOT NULL) "; se esperaba ")"
+Syntax error in SQL statement "CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 [*]NOT NULL, TIPO VARCHAR(50) NOT NULL) "; expected ")"; SQL statement:
+CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 NOT NULL, TIPO VARCHAR(50) NOT NULL)  [42001-224]
+2024-08-01 00:23:23.215062-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 [*]NOT NULL, TIPO VARCHAR(50) NOT NULL) "; se esperaba ")"
+Syntax error in SQL statement "CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 [*]NOT NULL, TIPO VARCHAR(50) NOT NULL) "; expected ")"; SQL statement:
+CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 NOT NULL, TIPO VARCHAR(50) NOT NULL)  [42001-224]

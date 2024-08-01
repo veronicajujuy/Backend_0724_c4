@@ -1,0 +1,53 @@
+[2024-08-01 00:06:08] [ INFO ] [Main:28] [main] animal: 1 FIRULAIS PERRO
+[2024-08-01 00:06:08] [ INFO ] [Main:28] [main] animal: 2 SOLOVINO GATO
+[2024-08-01 00:06:08] [ INFO ] [Main:28] [main] animal: 3 FRIJOL PERRO
+[2024-08-01 00:06:08] [ INFO ] [Main:28] [main] animal: 4 MAXI CONEJO
+[2024-08-01 00:06:08] [ INFO ] [Main:28] [main] animal: 5 SAYAYIN GATO
+[2024-08-01 00:07:37] [ INFO ] [Main:34] [main] Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-224]
+[2024-08-01 00:08:37] [ INFO ] [Main:28] [main] animal: 1 FIRULAIS PERRO
+[2024-08-01 00:08:37] [ INFO ] [Main:28] [main] animal: 2 SOLOVINO GATO
+[2024-08-01 00:08:37] [ INFO ] [Main:28] [main] animal: 3 FRIJOL PERRO
+[2024-08-01 00:08:37] [ INFO ] [Main:28] [main] animal: 4 MAXI CONEJO
+[2024-08-01 00:08:37] [ INFO ] [Main:28] [main] animal: 5 SAYAYIN GATO
+[2024-08-01 00:14:18] [ INFO ] [Main:34] [main] La base de datos puede que ya esté siendo utilizada: "G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-08-01 00:14:49] [ INFO ] [Main:34] [main] La base de datos puede que ya esté siendo utilizada: "G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "G:/Java/DH_0724/Backend_C4/Clase 8/proyectoH2Jdbc/clase8.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-08-01 00:15:14] [ INFO ] [Main:28] [main] animal: 1 FIRULAIS PERRO
+[2024-08-01 00:15:14] [ INFO ] [Main:28] [main] animal: 2 SOLOVINO GATO
+[2024-08-01 00:15:14] [ INFO ] [Main:28] [main] animal: 3 FRIJOL PERRO
+[2024-08-01 00:15:14] [ INFO ] [Main:28] [main] animal: 4 MAXI CONEJO
+[2024-08-01 00:15:14] [ INFO ] [Main:28] [main] animal: 5 SAYAYIN GATO
+[2024-08-01 00:19:58] [ INFO ] [Main:30] [main] animal: 1 FIRULAIS PERRO
+[2024-08-01 00:19:58] [ INFO ] [Main:30] [main] animal: 2 SOLOVINO GATO
+[2024-08-01 00:19:58] [ INFO ] [Main:30] [main] animal: 3 FRIJOL PERRO
+[2024-08-01 00:19:58] [ INFO ] [Main:30] [main] animal: 4 MAXI CONEJO
+[2024-08-01 00:19:58] [ INFO ] [Main:30] [main] animal: 5 SAYAYIN GATO
+[2024-08-01 00:19:58] [ INFO ] [Main:48] [main] Tabla "ANIMALS" no encontrada
+Table "ANIMALS" not found; SQL statement:
+DELETE FROM ANIMALS WHERE ID = 5 [42102-224]
+[2024-08-01 00:21:20] [ INFO ] [Main:30] [main] animal: 1 FIRULAIS PERRO
+[2024-08-01 00:21:20] [ INFO ] [Main:30] [main] animal: 2 SOLOVINO GATO
+[2024-08-01 00:21:20] [ INFO ] [Main:30] [main] animal: 3 FRIJOL PERRO
+[2024-08-01 00:21:20] [ INFO ] [Main:30] [main] animal: 4 MAXI CONEJO
+[2024-08-01 00:21:20] [ INFO ] [Main:30] [main] animal: 5 SAYAYIN GATO
+[2024-08-01 00:21:20] [ INFO ] [Main:39] [main] -------------------------------------------------------
+[2024-08-01 00:21:20] [ INFO ] [Main:42] [main] animal: 1 FIRULAIS PERRO
+[2024-08-01 00:21:20] [ INFO ] [Main:42] [main] animal: 2 SOLOVINO GATO
+[2024-08-01 00:21:20] [ INFO ] [Main:42] [main] animal: 3 FRIJOL PERRO
+[2024-08-01 00:21:20] [ INFO ] [Main:42] [main] animal: 4 MAXI CONEJO
+[2024-08-01 00:22:00] [ INFO ] [Main:48] [main] Error de Sintaxis en sentencia SQL "CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 [*]NOT NULL, TIPO VARCHAR(50) NOT NULL) "; se esperaba ")"
+Syntax error in SQL statement "CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 [*]NOT NULL, TIPO VARCHAR(50) NOT NULL) "; expected ")"; SQL statement:
+CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 NOT NULL, TIPO VARCHAR(50) NOT NULL)  [42001-224]
+[2024-08-01 00:23:23] [ ERROR] [Main:48] [main] Error de Sintaxis en sentencia SQL "CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 [*]NOT NULL, TIPO VARCHAR(50) NOT NULL) "; se esperaba ")"
+Syntax error in SQL statement "CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 [*]NOT NULL, TIPO VARCHAR(50) NOT NULL) "; expected ")"; SQL statement:
+CREATE TABLE ANIMALES (ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(50 NOT NULL, TIPO VARCHAR(50) NOT NULL)  [42001-224]
+[2024-08-01 00:27:29] [ INFO ] [Main:32] [main] animal: 1 FIRULAIS PERRO
+[2024-08-01 00:27:29] [ INFO ] [Main:32] [main] animal: 2 SOLOVINO GATO
+[2024-08-01 00:27:29] [ INFO ] [Main:32] [main] animal: 3 FRIJOL PERRO
+[2024-08-01 00:27:29] [ INFO ] [Main:32] [main] animal: 4 MAXI CONEJO
+[2024-08-01 00:27:29] [ INFO ] [Main:32] [main] animal: 5 SAYAYIN GATO
+[2024-08-01 00:27:29] [ INFO ] [Main:41] [main] -------------------------------------------------------
+[2024-08-01 00:27:29] [ INFO ] [Main:44] [main] animal: 1 FIRULAIS PERRO
+[2024-08-01 00:27:29] [ INFO ] [Main:44] [main] animal: 3 FRIJOL PERRO
