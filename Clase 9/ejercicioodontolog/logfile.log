@@ -1,0 +1,7 @@
+[2024-08-04 17:36:32] [ INFO ] [Main:39] Odontologo{id=1, apellido='PANICO', nombre='CARLOS', matricula='123'}
+[2024-08-04 17:36:32] [ ERROR] [Main:53] Parametro "#2" no está fijado
+Parameter "#2" is not set; SQL statement:
+UPDATE ODONTOLOGOS SET MATRICULA = ? WHERE ID =? [90012-224]
+[2024-08-04 17:36:32] [ INFO ] [Main:65] Odontologo{id=1, apellido='PANICO', nombre='CARLOS', matricula='123'}
+[2024-08-04 17:37:10] [ INFO ] [Main:39] Odontologo{id=1, apellido='PANICO', nombre='CARLOS', matricula='123'}
+[2024-08-04 17:37:10] [ INFO ] [Main:65] Odontologo{id=1, apellido='PANICO', nombre='CARLOS', matricula='456'}

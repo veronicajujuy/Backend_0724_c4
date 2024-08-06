@@ -1,0 +1,14 @@
+2024-08-04 17:36:32.119505-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parametro "#2" no está fijado
+Parameter "#2" is not set; SQL statement:
+UPDATE ODONTOLOGOS SET MATRICULA = ? WHERE ID =? [90012-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:265)
+	at Main.main(Main.java:48)

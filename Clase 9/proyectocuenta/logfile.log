@@ -9,3 +9,13 @@ CREATE TABLE( ID INT AUTO_INCREMENT PRIMARY KEY,NROCUENTA VARCHAR(15) NOT NULL, 
 [2024-08-05 22:19:40] [ INFO ] [Main:62] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=150.0}
 [2024-08-05 22:20:22] [ INFO ] [Main:44] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=150.0}
 [2024-08-05 22:20:22] [ INFO ] [Main:62] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=165.0}
+[2024-08-05 22:28:25] [ ERROR] [Main:66] Error de Sintaxis en sentencia SQL "CREATE TABLE CUENTAS( ID INT AUTO_INCREMENT PRIMARY KEY,NROCUENTA VARCHAR(15) NOT NULL, NOMBRE VARCHAR(25), SALDO DECIMAL(7,2) NOT NULL)[*]ACTIVA BOOLEAN "
+Syntax error in SQL statement "CREATE TABLE CUENTAS( ID INT AUTO_INCREMENT PRIMARY KEY,NROCUENTA VARCHAR(15) NOT NULL, NOMBRE VARCHAR(25), SALDO DECIMAL(7,2) NOT NULL)[*]ACTIVA BOOLEAN "; SQL statement:
+CREATE TABLE CUENTAS( ID INT AUTO_INCREMENT PRIMARY KEY,NROCUENTA VARCHAR(15) NOT NULL, NOMBRE VARCHAR(25), SALDO DECIMAL(7,2) NOT NULL)ACTIVA BOOLEAN  [42000-224]
+[2024-08-05 22:28:55] [ INFO ] [Main:45] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=150.0}
+[2024-08-05 22:28:55] [ INFO ] [Main:63] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=165.0}
+[2024-08-05 22:29:38] [ INFO ] [Main:44] activatrue
+[2024-08-05 22:29:38] [ INFO ] [Main:47] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=150.0}
+[2024-08-05 22:29:38] [ INFO ] [Main:65] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=165.0}
+[2024-08-05 22:31:50] [ INFO ] [Main:44] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=150.0}
+[2024-08-05 22:31:50] [ INFO ] [Main:62] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=165.0}

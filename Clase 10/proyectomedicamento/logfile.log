@@ -1,0 +1,12 @@
+[2024-08-06 00:29:04] [ INFO ] [DaoH2:36] medicamento guardado en base de datosMedicamento{id=null, nombre='LORATADINA', laboratorio='BAGO', cantidad=12, precio=360.0}
+[2024-08-06 00:32:54] [ INFO ] [DaoH2:37] medicamento guardado en base de datosMedicamento{id=4, nombre='LORATADINA', laboratorio='BAGO', cantidad=12, precio=360.0}
+[2024-08-06 00:34:49] [ INFO ] [DaoH2:85] El medicamento encontrado es Medicamento{id=2, nombre='ACTRON', laboratorio='BAYER', cantidad=15, precio=65.0}
+[2024-08-06 00:37:08] [ INFO ] [DaoH2:118] medicamento Medicamento{id=1, nombre='IBUPIRAC', laboratorio='BAYER', cantidad=10, precio=50.0}
+[2024-08-06 00:37:08] [ INFO ] [DaoH2:118] medicamento Medicamento{id=2, nombre='ACTRON', laboratorio='BAYER', cantidad=15, precio=65.0}
+[2024-08-06 00:37:08] [ INFO ] [DaoH2:118] medicamento Medicamento{id=3, nombre='ASPIRINA', laboratorio='BAYER', cantidad=5, precio=20.0}
+[2024-08-06 00:37:35] [ INFO ] [DaoH2:37] medicamento guardado en base de datosMedicamento{id=4, nombre='LORATADINA', laboratorio='BAGO', cantidad=12, precio=360.0}
+[2024-08-06 00:37:36] [ INFO ] [DaoH2:85] El medicamento encontrado es Medicamento{id=2, nombre='ACTRON', laboratorio='BAYER', cantidad=15, precio=65.0}
+[2024-08-06 00:37:36] [ INFO ] [DaoH2:118] medicamento Medicamento{id=1, nombre='IBUPIRAC', laboratorio='BAYER', cantidad=10, precio=50.0}
+[2024-08-06 00:37:36] [ INFO ] [DaoH2:118] medicamento Medicamento{id=2, nombre='ACTRON', laboratorio='BAYER', cantidad=15, precio=65.0}
+[2024-08-06 00:37:36] [ INFO ] [DaoH2:118] medicamento Medicamento{id=3, nombre='ASPIRINA', laboratorio='BAYER', cantidad=5, precio=20.0}
+[2024-08-06 00:37:36] [ INFO ] [DaoH2:118] medicamento Medicamento{id=4, nombre='LORATADINA', laboratorio='BAGO', cantidad=12, precio=360.0}
