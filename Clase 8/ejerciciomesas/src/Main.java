@@ -39,7 +39,7 @@ public class Main {
             }
         }
     }
-    public static Connection getConnection() throws Exception{
+    public static Connection getConnection() throws ClassNotFoundException, SQLException {
         Class.forName("org.h2.Driver");
         return DriverManager.getConnection("jdbc:h2:./clase8_2","sa","sa");
     }

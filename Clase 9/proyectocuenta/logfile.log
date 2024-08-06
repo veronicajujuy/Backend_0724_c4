@@ -1,0 +1,11 @@
+[2024-08-05 21:58:54] [ ERROR] [Main:47] Error de Sintaxis en sentencia SQL "CREATE TABLE[*]( ID INT AUTO_INCREMENT PRIMARY KEY,NROCUENTA VARCHAR(15) NOT NULL, NOMBRE VARCHAR(25), SALDO DECIMAL(7,2) NOT NULL) "; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE[*]( ID INT AUTO_INCREMENT PRIMARY KEY,NROCUENTA VARCHAR(15) NOT NULL, NOMBRE VARCHAR(25), SALDO DECIMAL(7,2) NOT NULL) "; expected "identifier"; SQL statement:
+CREATE TABLE( ID INT AUTO_INCREMENT PRIMARY KEY,NROCUENTA VARCHAR(15) NOT NULL, NOMBRE VARCHAR(25), SALDO DECIMAL(7,2) NOT NULL)  [42001-224]
+[2024-08-05 21:59:38] [ INFO ] [Main:43] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=150.0}
+[2024-08-05 22:18:40] [ INFO ] [Main:44] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=150.0}
+[2024-08-05 22:18:40] [ INFO ] [Main:55] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=165.0}
+[2024-08-05 22:19:40] [ INFO ] [Main:44] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=150.0}
+[2024-08-05 22:19:40] [ ERROR] [Main:58] / by zero
+[2024-08-05 22:19:40] [ INFO ] [Main:62] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=150.0}
+[2024-08-05 22:20:22] [ INFO ] [Main:44] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=150.0}
+[2024-08-05 22:20:22] [ INFO ] [Main:62] cuentaCuenta{id=1, nroCuenta='145687', nombre='pepito.mp', saldo=165.0}
