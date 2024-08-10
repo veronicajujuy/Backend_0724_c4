@@ -13,6 +13,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -57,6 +58,17 @@ class PacienteServiceTest {
         Paciente pacienteDesdeDb = pacienteService.buscarPorId(id);
         // entonces
         assertEquals(id, pacienteDesdeDb.getId());
+    }
+
+    @Test
+    @DisplayName("Listar todos los pacientes")
+    void caso3(){
+        //Dado
+        List<Paciente> pacientes;
+        // cuando
+        pacientes = pacienteService.buscarTodos();
+        // entonces
+        assertFalse(pacientes.isEmpty());
     }
 
 }

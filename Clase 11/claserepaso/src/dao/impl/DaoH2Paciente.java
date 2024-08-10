@@ -6,14 +6,17 @@ import model.Domicilio;
 import model.Paciente;
 import org.apache.log4j.Logger;
 
+import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DaoH2Paciente implements IDao<Paciente> {
     public static final Logger logger = Logger.getLogger(DaoH2Domicilio.class);
     public static final String INSERT = "INSERT INTO PACIENTES VALUES(DEFAULT,?,?,?,?,? )";
     public static final String SELECT_ID = "SELECT * FROM PACIENTES WHERE ID = ?";
+    public static final String SELECT_ALL = "SELECT * FROM PACIENTES";
 
     // esta instanciacion de la clase daoH2Domicilio me va a permitir acceder a los metodos de domicilio
     private DaoH2Domicilio daoH2Domicilio = new DaoH2Domicilio();
@@ -109,6 +112,37 @@ public class DaoH2Paciente implements IDao<Paciente> {
 
     @Override
     public List<Paciente> listaTodos() {
-        return null;
+        Connection connection = null;
+        List<Paciente> pacientes = new ArrayList<>();
+        Paciente pacienteDesdeDB = null;
+        try{
+            connection = H2Connection.getConnection();
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(SELECT_ALL);
+            while (resultSet.next()){
+                Integer idDB = resultSet.getInt(1);
+                String apellido = resultSet.getString(2);
+                String nombre = resultSet.getString(3);
+                String dni = resultSet.getString(4);
+                LocalDate fechaIngreso = resultSet.getDate(5).toLocalDate();
+                Integer id_domicilio = resultSet.getInt(6);
+                Domicilio domicilio = daoH2Domicilio.buscarPorId(id_domicilio);
+                pacienteDesdeDB = new Paciente(idDB, apellido, nombre, dni, fechaIngreso, domicilio);
+                logger.info(pacienteDesdeDB);
+                pacientes.add(pacienteDesdeDB);
+            }
+
+        }catch (Exception e){
+            logger.error(e.getMessage());
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                logger.error(e.getMessage());
+                e.printStackTrace();
+            }
+        }
+        return pacientes;
     }
 }
