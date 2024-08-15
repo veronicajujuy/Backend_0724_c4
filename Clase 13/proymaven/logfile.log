@@ -22,3 +22,19 @@
 [2024-08-13 00:21:35] [ INFO ] [DaoH2Domicilio:130] Paciente{id=1, apellido='PEREZ', nombre='JUAN', dni='4654666', fechaIngreso=2024-07-15, domicilio=Domicilio{id=1, calle='SIEMPRE VIVA', numero=123, localidad='SAN SALVADOR', provincia='JUJUY'}}
 [2024-08-13 00:21:35] [ INFO ] [DaoH2Domicilio:82] domicilio encontrado Domicilio{id=2, calle='Falsa', numero=145, localidad='CABA', provincia='Buenos Aires'}
 [2024-08-13 00:21:35] [ INFO ] [DaoH2Domicilio:130] Paciente{id=2, apellido='Castro', nombre='Maria', dni='48974646', fechaIngreso=2024-07-15, domicilio=Domicilio{id=2, calle='Falsa', numero=145, localidad='CABA', provincia='Buenos Aires'}}
+[2024-08-13 00:44:53] [ INFO ] [DaoH2Domicilio:36] domicilio persistido Domicilio{id=2, calle='Falsa', numero=145, localidad='CABA', provincia='Buenos Aires'}
+[2024-08-13 00:44:53] [ INFO ] [DaoH2Domicilio:44] paciente Paciente{id=2, apellido='Castro', nombre='Maria', dni='48974646', fechaIngreso=2024-07-15, domicilio=Domicilio{id=2, calle='Falsa', numero=145, localidad='CABA', provincia='Buenos Aires'}}
+[2024-08-13 00:44:53] [ INFO ] [DaoH2Domicilio:82] domicilio encontrado Domicilio{id=1, calle='SIEMPRE VIVA', numero=123, localidad='SAN SALVADOR', provincia='JUJUY'}
+[2024-08-13 00:44:53] [ INFO ] [DaoH2Domicilio:93] paciente encontrado Paciente{id=1, apellido='PEREZ', nombre='JUAN', dni='4654666', fechaIngreso=2024-07-15, domicilio=Domicilio{id=1, calle='SIEMPRE VIVA', numero=123, localidad='SAN SALVADOR', provincia='JUJUY'}}
+[2024-08-13 00:44:53] [ INFO ] [DaoH2Domicilio:82] domicilio encontrado Domicilio{id=1, calle='SIEMPRE VIVA', numero=123, localidad='SAN SALVADOR', provincia='JUJUY'}
+[2024-08-13 00:44:53] [ INFO ] [DaoH2Domicilio:130] Paciente{id=1, apellido='PEREZ', nombre='JUAN', dni='4654666', fechaIngreso=2024-07-15, domicilio=Domicilio{id=1, calle='SIEMPRE VIVA', numero=123, localidad='SAN SALVADOR', provincia='JUJUY'}}
+[2024-08-13 00:44:53] [ INFO ] [DaoH2Domicilio:82] domicilio encontrado Domicilio{id=2, calle='Falsa', numero=145, localidad='CABA', provincia='Buenos Aires'}
+[2024-08-13 00:44:53] [ INFO ] [DaoH2Domicilio:130] Paciente{id=2, apellido='Castro', nombre='Maria', dni='48974646', fechaIngreso=2024-07-15, domicilio=Domicilio{id=2, calle='Falsa', numero=145, localidad='CABA', provincia='Buenos Aires'}}
+[2024-08-13 00:51:15] [ INFO ] [DaoH2Domicilio:36] domicilio persistido Domicilio{id=2, calle='Falsa', numero=145, localidad='CABA', provincia='Buenos Aires'}
+[2024-08-13 00:51:15] [ INFO ] [DaoH2Domicilio:44] paciente Paciente{id=2, apellido='Castro', nombre='Maria', dni='48974646', fechaIngreso=2024-07-15, domicilio=Domicilio{id=2, calle='Falsa', numero=145, localidad='CABA', provincia='Buenos Aires'}}
+[2024-08-13 00:51:15] [ INFO ] [DaoH2Domicilio:82] domicilio encontrado Domicilio{id=1, calle='SIEMPRE VIVA', numero=123, localidad='SAN SALVADOR', provincia='JUJUY'}
+[2024-08-13 00:51:15] [ INFO ] [DaoH2Domicilio:93] paciente encontrado Paciente{id=1, apellido='PEREZ', nombre='JUAN', dni='4654666', fechaIngreso=2024-07-15, domicilio=Domicilio{id=1, calle='SIEMPRE VIVA', numero=123, localidad='SAN SALVADOR', provincia='JUJUY'}}
+[2024-08-13 00:51:15] [ INFO ] [DaoH2Domicilio:82] domicilio encontrado Domicilio{id=1, calle='SIEMPRE VIVA', numero=123, localidad='SAN SALVADOR', provincia='JUJUY'}
+[2024-08-13 00:51:15] [ INFO ] [DaoH2Domicilio:130] Paciente{id=1, apellido='PEREZ', nombre='JUAN', dni='4654666', fechaIngreso=2024-07-15, domicilio=Domicilio{id=1, calle='SIEMPRE VIVA', numero=123, localidad='SAN SALVADOR', provincia='JUJUY'}}
+[2024-08-13 00:51:15] [ INFO ] [DaoH2Domicilio:82] domicilio encontrado Domicilio{id=2, calle='Falsa', numero=145, localidad='CABA', provincia='Buenos Aires'}
+[2024-08-13 00:51:15] [ INFO ] [DaoH2Domicilio:130] Paciente{id=2, apellido='Castro', nombre='Maria', dni='48974646', fechaIngreso=2024-07-15, domicilio=Domicilio{id=2, calle='Falsa', numero=145, localidad='CABA', provincia='Buenos Aires'}}
