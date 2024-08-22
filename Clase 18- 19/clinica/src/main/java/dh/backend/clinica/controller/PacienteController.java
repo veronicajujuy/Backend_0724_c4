@@ -29,7 +29,8 @@ public class PacienteController {
         Paciente pacienteEncontrado = pacienteService.buscarPorId(paciente.getId());
         if(pacienteEncontrado!= null){
             pacienteService.modificarPaciente(paciente);
-            return ResponseEntity.ok("el paciente fue modificado");
+            String jsonResponse = "{\"mensaje\": \"El paciente fue modificado\"}";
+            return ResponseEntity.ok(jsonResponse);
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
@@ -41,7 +42,8 @@ public class PacienteController {
         Paciente pacienteEncontrado = pacienteService.buscarPorId(id);
         if(pacienteEncontrado!= null) {
             pacienteService.eliminarPaciente(id);
-            return ResponseEntity.ok("el paciente fue eliminado");
+            String jsonResponse = "{\"mensaje\": \"El paciente fue eliminado\"}";
+            return ResponseEntity.ok(jsonResponse);
         } else {
             return ResponseEntity.notFound().build();
         }
