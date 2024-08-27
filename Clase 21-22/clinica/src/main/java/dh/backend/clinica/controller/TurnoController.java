@@ -1,6 +1,7 @@
 package dh.backend.clinica.controller;
 
 import dh.backend.clinica.entity.Turno;
+import dh.backend.clinica.service.ITurnoService;
 import dh.backend.clinica.service.impl.TurnoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,9 +11,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/turnos")
 public class TurnoController {
-    private TurnoService turnoService;
+    private ITurnoService turnoService;
 
-    public TurnoController(TurnoService turnoService) {
+    public TurnoController(ITurnoService turnoService) {
         this.turnoService = turnoService;
     }
 

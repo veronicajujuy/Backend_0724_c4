@@ -19,7 +19,7 @@ public class VistaController {
     //localhost:8080/index?id=1&nombre=paciente1
     @GetMapping("/index")
     public String buscarPaciente(Model model, @RequestParam Integer id){
-        Paciente paciente = pacienteService.buscarPorId(id);
+        Paciente paciente = pacienteService.buscarPorId(id).get();
 
         model.addAttribute("nombre", paciente.getNombre());
         model.addAttribute("apellido", paciente.getApellido());
