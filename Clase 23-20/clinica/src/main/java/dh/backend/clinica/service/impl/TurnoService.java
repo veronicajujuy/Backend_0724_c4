@@ -97,6 +97,11 @@ public class TurnoService implements ITurnoService {
         turnoRepository.deleteById(id);
     }
 
+    @Override
+    public Optional<Turno> buscarTurnosPorPaciente(String pacienteApellido) {
+        return turnoRepository.buscarPorApellidoPaciente(pacienteApellido);
+    }
+
     private TurnoResponseDto obtenerTurnoResponse(Turno turnoDesdeBD){
         OdontologoResponseDto odontologoResponseDto = new OdontologoResponseDto(
                 turnoDesdeBD.getOdontologo().getId(), turnoDesdeBD.getOdontologo().getNroMatricula(),
