@@ -61,8 +61,10 @@ public class TurnoService implements ITurnoService {
     }
 
     @Override
-    public Optional<Turno> buscarPorId(Integer id) {
-        return turnoRepository.findById(id);
+    public Optional<TurnoResponseDto> buscarPorId(Integer id) {
+        Optional<Turno> turno = turnoRepository.findById(id);
+        TurnoResponseDto turnoRespuesta = convertirTurnoEnResponse(turno.get());
+        return Optional.of(turnoRespuesta);
     }
 
     @Override
@@ -98,8 +100,13 @@ public class TurnoService implements ITurnoService {
     }
 
     @Override
-    public Optional<Turno> buscarTurnosPorPaciente(String pacienteApellido) {
-        return turnoRepository.buscarPorApellidoPaciente(pacienteApellido);
+    public Optional<TurnoResponseDto> buscarTurnosPorPaciente(String pacienteApellido) {
+         Optional<Turno> turno = turnoRepository.buscarPorApellidoPaciente(pacienteApellido);
+        TurnoResponseDto turnoParaResponder = null;
+         if(turno.isPresent()) {
+             turnoParaResponder = convertirTurnoEnResponse(turno.get());
+         }
+        return Optional.ofNullable(turnoParaResponder);
     }
 
     private TurnoResponseDto obtenerTurnoResponse(Turno turnoDesdeBD){

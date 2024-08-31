@@ -3,10 +3,7 @@ package dh.backend.clinica.controller;
 import dh.backend.clinica.dto.request.TurnoModifyDto;
 import dh.backend.clinica.dto.request.TurnoRequestDto;
 import dh.backend.clinica.dto.response.TurnoResponseDto;
-import dh.backend.clinica.entity.Turno;
 import dh.backend.clinica.service.ITurnoService;
-import dh.backend.clinica.service.impl.TurnoService;
-import org.springframework.expression.spel.ast.OpAnd;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,8 +35,8 @@ public class TurnoController {
         return ResponseEntity.ok("{\"mensaje\": \"El turno fue modificado\"}");
     }
     @GetMapping("/buscarTurnoApellido/{apellido}")
-    public ResponseEntity<Turno> buscarTurnoPorApellido(@PathVariable String apellido){
-        Optional<Turno> turno = turnoService.buscarTurnosPorPaciente(apellido);
+    public ResponseEntity<TurnoResponseDto> buscarTurnoPorApellido(@PathVariable String apellido){
+        Optional<TurnoResponseDto> turno = turnoService.buscarTurnosPorPaciente(apellido);
         return ResponseEntity.ok(turno.get());
     }
 }
