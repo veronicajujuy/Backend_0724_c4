@@ -23,15 +23,30 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(apiError);
     }
 
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<ApiError> manejoGeneral(Exception e, HttpServletRequest request){
+    @ExceptionHandler(BadRequestException.class)
+    public ResponseEntity<ApiError> requerimientoIncorrecto(BadRequestException e, HttpServletRequest request){
         ApiError apiError = new ApiError(
                 request.getRequestURI(),
-                "Error del servidor",
-                HttpStatus.INTERNAL_SERVER_ERROR.value(),
+                e.getMessage(),
+                HttpStatus.BAD_REQUEST.value(),
                 ZonedDateTime.now(),
                 List.of()
         );
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(apiError);
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(apiError);
     }
+
+    // Este codigo esta comentado porque si tienen errores, no les proporciona la suficiente información sobre el error
+    // descomentar solo cuando este listo el backend
+
+//    @ExceptionHandler(Exception.class)
+//    public ResponseEntity<ApiError> manejoGeneral(Exception e, HttpServletRequest request){
+//        ApiError apiError = new ApiError(
+//                request.getRequestURI(),
+//                e.getMessage(),
+//                HttpStatus.INTERNAL_SERVER_ERROR.value(),
+//                ZonedDateTime.now(),
+//                List.of()
+//        );
+//        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(apiError);
+//    }
 }

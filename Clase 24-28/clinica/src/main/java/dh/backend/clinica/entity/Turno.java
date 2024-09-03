@@ -35,13 +35,13 @@ public class Turno {
 //        return GsonProvider.getGson().toJson(this);
 //    }
 
-    @Override
-    public String toString() {
-        return "Turno{" +
-                "id=" + id +
-                ", paciente=" + paciente +
-                ", odontologo=" + odontologo +
-                ", fecha=" + fecha +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Turno{" +
+//                "id=" + id +
+//                ", paciente=" + paciente +
+//                ", odontologo=" + odontologo +
+//                ", fecha=" + fecha +
+//                '}';
+//    }
 }

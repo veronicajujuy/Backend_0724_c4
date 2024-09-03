@@ -8,6 +8,7 @@ import dh.backend.clinica.dto.response.TurnoResponseDto;
 import dh.backend.clinica.entity.Odontologo;
 import dh.backend.clinica.entity.Paciente;
 import dh.backend.clinica.entity.Turno;
+import dh.backend.clinica.exception.BadRequestException;
 import dh.backend.clinica.exception.ResourceNotFoundException;
 import dh.backend.clinica.repository.ITurnoRepository;
 import dh.backend.clinica.service.IOdontologoService;
@@ -41,12 +42,12 @@ public class TurnoService implements ITurnoService {
 
     @Override
     public TurnoResponseDto guardarTurno(TurnoRequestDto turnoRequestDto){
-        Optional<Paciente> paciente = pacienteService.buscarPorId(turnoRequestDto.getPaciente_id());
-        Optional<Odontologo> odontologo = odontologoService.buscarPorId(turnoRequestDto.getOdontologo_id());
-        Turno turno = new Turno();
-        Turno turnoDesdeBD = null;
-        TurnoResponseDto turnoResponseDto = null;
-        if(paciente.isPresent() && odontologo.isPresent()){
+        try{
+            Optional<Paciente> paciente = pacienteService.buscarPorId(turnoRequestDto.getPaciente_id());
+            Optional<Odontologo> odontologo = odontologoService.buscarPorId(turnoRequestDto.getOdontologo_id());
+            Turno turno = new Turno();
+            Turno turnoDesdeBD = null;
+            TurnoResponseDto turnoResponseDto = null;
             // el armado del turno desde el turno request dto
             turno.setPaciente(paciente.get());
             turno.setOdontologo(odontologo.get());
@@ -60,15 +61,22 @@ public class TurnoService implements ITurnoService {
             // turnoResponseDto = obtenerTurnoResponse(turnoDesdeBD);
             // armado con modelmapper
             turnoResponseDto = convertirTurnoEnResponse(turnoDesdeBD);
+            return turnoResponseDto;
+        } catch (ResourceNotFoundException e){
+            throw new BadRequestException("Paciente u odontologo no existen en la base de datos");
         }
-        return turnoResponseDto;
+
     }
 
     @Override
     public Optional<TurnoResponseDto> buscarPorId(Integer id) {
         Optional<Turno> turno = turnoRepository.findById(id);
-        TurnoResponseDto turnoRespuesta = convertirTurnoEnResponse(turno.get());
-        return Optional.of(turnoRespuesta);
+        if(turno.isPresent()){
+            TurnoResponseDto turnoRespuesta = convertirTurnoEnResponse(turno.get());
+            return Optional.of(turnoRespuesta);
+        } else {
+            throw new ResourceNotFoundException("El turno no fue encontrado");
+        }
     }
 
     @Override
@@ -79,8 +87,10 @@ public class TurnoService implements ITurnoService {
             // manera manual
             //turnosRespuesta.add(obtenerTurnoResponse(t));
             // model mapper
-//            logger.info("turno "+ t);
-            turnosRespuesta.add(convertirTurnoEnResponse(t));
+            TurnoResponseDto turnoRespuesta =convertirTurnoEnResponse(t);
+            logger.info("turno "+ turnoRespuesta);
+            turnosRespuesta.add(turnoRespuesta);
+
         }
         return turnosRespuesta;
     }
@@ -101,18 +111,13 @@ public class TurnoService implements ITurnoService {
 
     @Override
     public void eliminarTurno(Integer id){
-        Optional<Turno> turnoEncontrado = turnoRepository.findById(id);
-        if(turnoEncontrado.isPresent()){
-            turnoRepository.deleteById(id);
-        } else {
-            throw new ResourceNotFoundException("Turno no encontrado");
-        }
-
+        Optional<TurnoResponseDto> turnoEncontrado = buscarPorId(id);
+        turnoRepository.deleteById(id);
     }
 
     @Override
     public Optional<TurnoResponseDto> buscarTurnosPorPaciente(String pacienteApellido) {
-         Optional<Turno> turno = turnoRepository.buscarPorApellidoPaciente(pacienteApellido);
+        Optional<Turno> turno = turnoRepository.buscarPorApellidoPaciente(pacienteApellido);
         TurnoResponseDto turnoParaResponder = null;
          if(turno.isPresent()) {
              turnoParaResponder = convertirTurnoEnResponse(turno.get());

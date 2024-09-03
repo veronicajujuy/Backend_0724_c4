@@ -35,8 +35,8 @@ public class Paciente {
     //@JsonIgnore
     private Set<Turno> turnoSet;
 
-//    @Override
-//    public String toString() {
-//       // return GsonProvider.getGson().toJson(this);
-//    }
+    @Override
+    public String toString() {
+        return GsonProvider.getGson().toJson(this);
+    }
 }
